@@ -176,19 +176,19 @@ def get_running_plots(jobs, running_work, instrumentation_settings):
     chia_executable_name = get_chia_executable_name()
     for process in psutil.process_iter():
         try:
-            if chia_executable_name not in process.name() and 'python' not in process.name().lower():
+            if chia_executable_name not in process.name():
                 continue
         except (psutil.AccessDenied, psutil.NoSuchProcess):
             continue
         try:
-            if 'plots' not in process.cmdline() or 'create' not in process.cmdline():
+            if 'chia_plot' not in process.cmdline():
                 continue
         except (psutil.ZombieProcess, psutil.NoSuchProcess):
             continue
         if process.parent():
             try:
                 parent_commands = process.parent().cmdline()
-                if 'plots' in parent_commands and 'create' in parent_commands:
+                if 'chia_plot' in parent_commands:
                     continue
             except (psutil.AccessDenied, psutil.ZombieProcess):
                 pass
