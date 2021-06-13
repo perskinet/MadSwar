@@ -14,7 +14,7 @@ manager:
   #      log_level: Keep this on ERROR to only record when there are errors. Change this to INFO in order to see more
   #                 detailed logging. Warning: INFO will write a lot of information.
   check_interval: 5
-  log_level: ERROR
+  log_level: INFO
 
 
 log:
