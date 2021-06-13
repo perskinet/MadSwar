@@ -3,7 +3,6 @@ def create(size, memory_buffer, temporary_directory, destination_directory, thre
            exclude_final_directory=False):
     flags = dict(
         k=size,
-        b=memory_buffer,
         t=temporary_directory,
         d=destination_directory,
         r=threads,
@@ -20,7 +19,7 @@ def create(size, memory_buffer, temporary_directory, destination_directory, thre
     if exclude_final_directory:
         flags['x'] = ''
 
-    data = [chia_location, 'plots', 'create']
+    data = [chia_location]
     for key, value in flags.items():
         flag = f'-{key}'
         data.append(flag)
