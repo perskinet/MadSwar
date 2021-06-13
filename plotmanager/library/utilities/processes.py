@@ -191,6 +191,7 @@ def get_running_plots(jobs, running_work, instrumentation_settings):
             try:
                 parent_commands = process.parent().cmdline()
                 if 'chia_plot' in parent_commands:
+                    logging.info(f'Is chia process but not parent ')
                     continue
             except (psutil.AccessDenied, psutil.ZombieProcess):
                 pass
