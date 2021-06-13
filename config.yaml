@@ -178,42 +178,42 @@ jobs:
     max_plots: 9999
     farmer_public_key: a3b958fdeae6d5314ed056c3e99fd49a16d4d825f9d9150655e2eaddf1241d97ccd5f2dade27699066f03f0dd0973aba
     pool_public_key: 841a0ef4081727e2e0edd43f14e4d9268cbc6a15ce9bcb223581bf282e07ade19bfd15aabd4faf564e88fb8977d69f95
-    temporary_directory: /mnt/nvme0
-    temporary2_directory:
+    temporary_directory: /mnt/nvme0/
+    temporary2_directory: /mnt/nvme0/
     destination_directory:
-                 - /mnt/hdd0
-                 - /mnt/hdd1
-                 - /mnt/hdd2
-                 - /mnt/hdd3
-                 - /mnt/hdd4
-                 - /mnt/hdd5
-                 - /mnt/hdd6
-                 - /mnt/hdd7
-                 - /mnt/hdd8
-                 - /mnt/hdd9
-                 - /mnt/hdd10
-                 - /mnt/hdd11
-                 - /mnt/hdd12
-                 - /mnt/hdd13
-                 - /mnt/hdd14
-                 - /mnt/hdd15
-                 - /mnt/hdd16
-                 - /mnt/hdd17
-                 - /mnt/hdd18
-                 - /mnt/hdd19
-                 - /mnt/hdd20
-                 - /mnt/hdd21
-                 - /mnt/hdd22
-                 - /mnt/hdd23
-                 - /mnt/hdd24
-                 - /mnt/hdd25
-                 - /mnt/hdd26
-                 - /mnt/hdd27
-                 - /mnt/hdd28
-                 - /mnt/hdd29
-                 - /mnt/hdd30
-                 - /mnt/hdd31
-                 - /mnt/hdd32
+                 - /mnt/hdd0/
+                 - /mnt/hdd1/
+                 - /mnt/hdd2/
+                 - /mnt/hdd3/
+                 - /mnt/hdd4/
+                 - /mnt/hdd5/
+                 - /mnt/hdd6/
+                 - /mnt/hdd7/
+                 - /mnt/hdd8/
+                 - /mnt/hdd9/
+                 - /mnt/hdd10/
+                 - /mnt/hdd11/
+                 - /mnt/hdd12/
+                 - /mnt/hdd13/
+                 - /mnt/hdd14/
+                 - /mnt/hdd15/
+                 - /mnt/hdd16/
+                 - /mnt/hdd17/
+                 - /mnt/hdd18/
+                 - /mnt/hdd19/
+                 - /mnt/hdd20/
+                 - /mnt/hdd21/
+                 - /mnt/hdd22/
+                 - /mnt/hdd23/
+                 - /mnt/hdd24/
+                 - /mnt/hdd25/
+                 - /mnt/hdd26/
+                 - /mnt/hdd27/
+                 - /mnt/hdd28/
+                 - /mnt/hdd29/
+                 - /mnt/hdd30/
+                 - /mnt/hdd31/
+                 - /mnt/hdd32/
     size: 32
     bitfield: true
     threads: 16
